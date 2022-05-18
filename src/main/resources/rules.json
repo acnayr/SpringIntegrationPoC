@@ -1,0 +1,60 @@
+[
+  {
+    "flow-name": "dominio1",
+    "flow-conf": {
+      "skip-priorities": false,
+      "rules": [
+        {
+          "name": "cliente-rule",
+          "class-ref": "com.poc.springintegration.PersonaClienteRegla",
+          "priority": 1,
+          "disabled": false,
+          "finalized": false
+        },
+        {
+          "name": "edad-rule",
+          "class-ref": "com.poc.springintegration.PersonaEdadRegla",
+          "priority": 2,
+          "disabled": false,
+          "finalized": false
+        },
+        {
+          "name": "nombre-rule",
+          "class-ref": "com.poc.springintegration.PersonaNombreRegla",
+          "priority": 3,
+          "disabled": true,
+          "finalized": false
+        }
+      ]
+    }
+  },
+  {
+    "flow-name": "dominio2",
+    "flow-conf": {
+      "skip-priorities": false,
+      "rules": [
+        {
+          "name": "cliente-rule",
+          "class-ref": "com.poc.springintegration.PersonaClienteRegla",
+          "priority": 1,
+          "disabled": false,
+          "finalized": false
+        },
+        {
+          "name": "edad-rule",
+          "class-ref": "com.poc.springintegration.PersonaEdadRegla",
+          "priority": 2,
+          "disabled": false,
+          "finalized": false
+        },
+        {
+          "name": "nombre-rule",
+          "class-ref": "com.poc.springintegration.PersonaNombreRegla",
+          "priority": 3,
+          "disabled": true,
+          "finalized": false
+        }
+      ]
+    }
+  }
+]
